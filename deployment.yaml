@@ -17,7 +17,7 @@ spec:
        image: vigneshvicky12345/springboot-app:latest
        imagePullPolicy: Always
        ports:
-       - containerPort: 4000
+       - containerPort: 8080
 ---
 apiVersion: v1
 kind: Service
@@ -30,4 +30,4 @@ spec:
   ports:
     - port: 8086
       protocol: TCP
-      targetPort: 4000
+      targetPort: 8080
